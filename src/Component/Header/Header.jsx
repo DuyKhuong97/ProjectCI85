@@ -8,7 +8,7 @@ const Header = () => {
                     <div className="row navbar-menu">
                         <div className="col-lg-2 col-md-6 col-5 contact-header">
                             <a href="#" className="logo d-flex justify-content-center" title="Logo">
-                                <img src="../image/Main-logo.png" style={{ height: 65 }} alt="HKT-logo" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/projectci85.appspot.com/o/IMG%2FMain-logo.png?alt=media&token=cb72e1c0-a26b-425a-b20c-2eecbb842091" style={{ height: 65 }} alt="HKT-logo" />
                             </a>
                         </div>
                         <div className="d-flex justify-content-start align-items-center col-lg-7 col-md-12 col-menu order-2 order-lg-1">
