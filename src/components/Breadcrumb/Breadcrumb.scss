@@ -1,0 +1,29 @@
+.main__body--breadcrumb {
+    background: #FFECE1;
+    padding: 5px 0;
+    width: -webkit-fill-available;
+
+    .container {
+        max-width: 1200px;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+
+        .breadcrumb {
+            margin: 0px;
+            border-radius: 0;
+            color: #777777;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 35px;
+            padding-left: 30px;
+
+            a {
+                text-decoration: none;
+                color: #777777;
+            }
+        }
+
+    }
+
+}
