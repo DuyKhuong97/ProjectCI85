@@ -1,3 +1,12 @@
+.bodywrap {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
 .main__home {
     .container__home {
         display: grid;
@@ -6,15 +15,6 @@
         margin: 30px auto 45px auto;
         grid-gap: 17px;
         max-width: 1200px;
-
-        .service__info h6 {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 22px;
-            margin-bottom: 12px;
-            background: #FFECE1;
-        }
 
         .service--layout:first-child {
             grid-row: 1/4;
@@ -33,6 +33,29 @@
         }
     }
 
+    .service__info {
+        margin-left: 30px;
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #777;
+            margin: 0;
+            background: #FFECE1;
+        }
+
+        h6 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 12px;
+            background: #FFECE1;
+        }
+    }
+
     .service--layout img {
         width: 100%;
     }
@@ -41,13 +64,43 @@
         display: flex;
         background: #FFECE1;
         border-radius: 3px;
-        padding: 25px 20px;
+        padding: 0 20px;
         align-items: center;
 
         img {
             width: 68px;
             height: 68px;
             background: #FFECE1;
+        }
+    }
+
+}
+
+.product-sale {
+    margin-bottom: 45px;
+
+    .sale-title h2 a {
+        background-image: url(//bizweb.dktcdn.net/100/459/658/themes/870139/assets/background_title1.png?1664955292457);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 100%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 20px 0;
+        display: block;
+        color: #A05139;
+    }
+
+    .sale {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        .sale-card {
+            display: flex;
+            overflow: auto;
         }
     }
 }
