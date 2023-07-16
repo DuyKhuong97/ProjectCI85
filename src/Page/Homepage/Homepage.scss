@@ -103,4 +103,114 @@
             overflow: auto;
         }
     }
+
+    .card--sale-price {
+        text-decoration: line-through;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8C8C8C;
+        margin-right: 10px;
+    }
+
+    .card--price {
+        font-weight: 700;
+    }
+}
+
+.sale__card-slider {
+    margin: 0 10px;
+    width: 268px;
+
+    .sale__card-slider--img {
+        position: relative;
+        margin-bottom: 15px;
+        border: 1px solid #F2F2F2;
+        border-radius: 3px;
+        width: 268px;
+    }
+
+
+    .sale__card-slider--a {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 239px;
+
+            .card-slider--img {
+                width: 100%;
+                height: 239px;
+                margin: 0px;
+            }
+
+        }
+    }
+
+    .slick-slide {
+        margin-right: 30px;
+        margin-left: 15px;
+    }
+
+    .card--sale-price {
+        margin-right: 10px;
+        text-decoration: line-through;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8C8C8C;
+        margin-right: 10px;
+    }
+
+    .card--price {
+        font-weight: 700;
+    }
+}
+
+.card-slider--btn {
+    display: flex;
+    margin: 7px;
+
+    .slider--button {
+        width: calc(100% - 60px);
+        margin-right: 12px;
+        margin-left: 5px;
+        padding: 11px 13px;
+        color: #A05139;
+        background: #ffb9a4;
+        border: 1px solid #ffb9a4;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .slider--button-icon {
+        margin-top: 0;
+        padding: 11px 13px;
+        color: #ffb9a4;
+        font-size: 14px;
+        border: none;
+        float: left;
+        margin-right: 4px;
+        background: #FFF4F0;
+        border: 1px solid #ffb9a4;
+        border-radius: 3px;
+    }
+}
+
+.slick-arrow {
+    border: 1px solid #E0E0E0;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    background: transparent;
+    position: absolute;
+    top: calc((100% - 56px) / 2);
+    transform: translate(0, -50%);
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
 }
