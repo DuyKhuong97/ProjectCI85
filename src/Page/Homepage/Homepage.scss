@@ -99,7 +99,7 @@
         gap: 16px;
 
         .sale-card {
-            display: flex;
+            // display: flex; <--- error message
             overflow: auto;
         }
     }
@@ -118,8 +118,9 @@
     }
 }
 
+// CSS của cụm card
 .sale__card-slider {
-    margin: 0 10px;
+    margin: 0 20px;
     width: 268px;
 
     .sale__card-slider--img {
@@ -207,10 +208,93 @@
     position: absolute;
     top: calc((100% - 56px) / 2);
     transform: translate(0, -50%);
+    &:hover {
+        background: #ffb9a4;
+    }
 }
+
+
 .slick-prev {
     left: 0;
 }
+
 .slick-next {
     right: 0;
+}
+
+//----------------------------------------------------------------
+
+.new-product {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 35px;
+
+    .NewProduct-title {
+        h2 {
+            background-image: url(//bizweb.dktcdn.net/100/459/658/themes/870139/assets/background_title2.png?1664955292457);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: left;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        a {
+            text-align: center;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 29px;
+            display: block;
+            color: #225A21;
+        }
+    }
+}
+
+.all-product {
+    .allProduct-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        background-image: url(//bizweb.dktcdn.net/100/459/658/themes/870139/assets/background_title3.png?1664955292457);
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-top: 15px;
+        height: auto;
+    }
+
+    .allProduct__tabs {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        position: relative;
+        padding: 0;
+
+        a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #2E747E;
+            cursor: pointer;
+        }
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background: transparent;
+            }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .all-product__active {
+        position: relative;
+    }
 }
